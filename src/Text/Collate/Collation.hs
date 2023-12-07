@@ -67,10 +67,6 @@ instance Binary CollationElement where
 newtype Collation = Collation { unCollation :: Trie.Trie [CollationElement] }
   deriving (Show, Eq, Ord, Lift, Semigroup, Monoid)
 
-instance Binary Collation where
-   put (Collation m) = put m
-   get = Collation <$> get
-
 
 
 -- | Unfold a 'Collation' into an association list.

@@ -4,7 +4,7 @@
 {-# LANGUAGE DeriveTraversable #-}
 {-# LANGUAGE DeriveLift #-}
 module Text.Collate.Trie
-  ( Trie
+  ( Trie (Trie)
   , empty
   , insert
   , alter
